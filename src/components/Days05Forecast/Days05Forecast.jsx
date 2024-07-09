@@ -1,4 +1,24 @@
 import React from "react";
+import {
+  pic01d,
+  pic01n,
+  pic02d,
+  pic02n,
+  pic03d,
+  pic03n,
+  pic04d,
+  pic04n,
+  pic09d,
+  pic09n,
+  pic10d,
+  pic10n,
+  pic11d,
+  pic11n,
+  pic13d,
+  pic13n,
+  pic50d,
+  pic50n,
+} from "../../assets/Index";
 const Days05Forecast = ({ day05Forecast }) => {
   var days = [
     "Sunday",
@@ -69,7 +89,7 @@ const Days05Forecast = ({ day05Forecast }) => {
                 <div className="flex justify-between items-center">
                   <div className="flex justify-center items-center gap-2">
                     <img
-                      src={`../../assets/images/weather_icons/${day.weather[0].icon}.png`}
+                      src={eval("pic" + day.weather[0].icon)}
                       alt="Weather"
                       loading="lazy"
                       className="w-[1.6rem]"
