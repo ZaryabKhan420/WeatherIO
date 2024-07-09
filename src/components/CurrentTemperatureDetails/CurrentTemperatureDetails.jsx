@@ -1,24 +1,4 @@
 import React from "react";
-import {
-  pic01d,
-  pic01n,
-  pic02d,
-  pic02n,
-  pic03d,
-  pic03n,
-  pic04d,
-  pic04n,
-  pic09d,
-  pic09n,
-  pic10d,
-  pic10n,
-  pic11d,
-  pic11n,
-  pic13d,
-  pic13n,
-  pic50d,
-  pic50n,
-} from "../../assets/Index";
 
 import directionImage from "../../assets/images/weather_icons/direction.png";
 
@@ -45,7 +25,7 @@ const CurrentTemperatureDetails = ({ day05Forecast }) => {
                 <div className="bg-accent text-textPrimary flex flex-col justify-between items-center p-3 gap-2 rounded-2xl h-[125px]">
                   <h1>{timings[index]}</h1>
                   <img
-                    src={eval("pic" + day.weather[0].icon)}
+                    src={`../../assets/images/weather_icons/${day.weather[0].icon}.png`}
                     alt="Weather"
                     loading="lazy"
                     className="w-[2rem]"

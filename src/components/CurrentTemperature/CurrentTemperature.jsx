@@ -1,24 +1,4 @@
 import React, { useEffect, useState } from "react";
-import {
-  pic01d,
-  pic01n,
-  pic02d,
-  pic02n,
-  pic03d,
-  pic03n,
-  pic04d,
-  pic04n,
-  pic09d,
-  pic09n,
-  pic10d,
-  pic10n,
-  pic11d,
-  pic11n,
-  pic13d,
-  pic13n,
-  pic50d,
-  pic50n,
-} from "../../assets/Index";
 import { MdOutlineCalendarToday } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";
 const CurrentTemperature = ({ currentWeather, place }) => {
@@ -71,7 +51,7 @@ const CurrentTemperature = ({ currentWeather, place }) => {
           <span className="text-3xl"> &deg;C</span>
         </h1>
         <img
-          src={eval("pic" + currentWeather.weather[0].icon)}
+          src={`../../assets/images/weather_icons/${currentWeather.weather[0].icon}.png`}
           alt="weather"
           className="w-[4rem]"
         />
