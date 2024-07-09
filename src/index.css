@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "materialFace";
+  src: url(./assets/font/material-symbol-rounded.woff2);
+}
+
+/* * {
+  font-family: "Poppins", sans-serif;
+} */
+
+.icons {
+  font-family: "materialFace";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.4rem;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: ltr;
+  font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: "antialiased";
+  width: 1rem;
+  height: 1rem;
+  overflow: hidden;
+}
