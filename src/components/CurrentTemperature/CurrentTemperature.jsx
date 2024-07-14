@@ -70,11 +70,60 @@ const CurrentTemperature = ({ currentWeather, place }) => {
           {parseFloat(currentWeather.main.temp - 273.15).toFixed(0)}{" "}
           <span className="text-3xl"> &deg;C</span>
         </h1>
-        <img
-          src={eval("pic" + currentWeather.weather[0].icon)}
-          alt="weather"
-          className="w-[4rem]"
-        />
+        {currentWeather.weather[0].icon === "01d" ? (
+          <img src={pic01d} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "01n" ? (
+          <img src={pic01n} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "02d" ? (
+          <img src={pic02d} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "02n" ? (
+          <img src={pic02n} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "03d" ? (
+          <img src={pic03d} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "03n" ? (
+          <img src={pic03n} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "04d" ? (
+          <img src={pic04d} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "04n" ? (
+          <img src={pic04n} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "09d" ? (
+          <img src={pic09d} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "09n" ? (
+          <img src={pic09n} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "10d" ? (
+          <img src={pic10d} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "10n" ? (
+          <img src={pic10n} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "11d" ? (
+          <img src={pic11d} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "11n" ? (
+          <img src={pic11n} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "13d" ? (
+          <img src={pic13d} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "13n" ? (
+          <img src={pic13n} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "50d" ? (
+          <img src={pic50d} alt="weather" className="w-[4rem]" />
+        ) : null}
+        {currentWeather.weather[0].icon === "50n" ? (
+          <img src={pic50n} alt="weather" className="w-[4rem]" />
+        ) : null}
       </div>
       <h3 className="text-sm text-textSecondary capitalize">
         {currentWeather.weather[0].description}
