@@ -20,7 +20,6 @@ import {
   pic50n,
 } from "../../assets/Index";
 const Days05Forecast = ({ day05Forecast }) => {
-  console.log(day05Forecast);
   var days = [
     "Sunday",
     "Monday",
